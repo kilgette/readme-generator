@@ -18,3 +18,7 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
+
+//build functions to generate the different readme sections
+//project overview, installation instructions, usage, features
+//documentation, license, contact info  with template literals 
