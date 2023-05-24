@@ -44,7 +44,7 @@ inquirer
       type: 'list',
       message: 'Choose a license:',
       name: 'license',
-      choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3-Clause', 'None',],
+      choices: ['MIT', 'Apache 2.0','None',],
     },
     {
       type: 'input',
@@ -63,9 +63,13 @@ inquirer
     writeToFile(generateMarkdown(data));
 
 
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
+    fs.writeFile("generated_README.md", JSON.stringify(data, null, '\t'), (err) =>
       err ? console.log(err) : console.log('Success!')
     );
   });
+
+  // function compileData(data){
+
+  // }
 
   
