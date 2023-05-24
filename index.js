@@ -60,16 +60,16 @@ inquirer
 
   .then((data) => {
     console.log(data);
-    writeToFile(generateMarkdown(data));
+const readMe = generateMarkdown(data);
 
 
-    fs.writeFile("generated_README.md", JSON.stringify(data, null, '\t'), (err) =>
+    fs.writeFile("generated_README.md",readMe, (err) =>
       err ? console.log(err) : console.log('Success!')
     );
   });
 
   //generate content answers
- function generateREADME(answers){
+ function generateMarkdown(answers){
   //initialize empty string 
   let readmeContent = '';
  readmeContent += `# ${answers.projectTitle}\n\n`;
@@ -81,5 +81,6 @@ inquirer
  readmeContent += `## License\n\n${answers.license}\n\n`;
  readmeContent += `## Username\n\n${answers.username}\n\n`;
  readmeContent += `## Email\n\n${answers.email}\n\n`;
+ return readmeContent
 }
   
