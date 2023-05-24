@@ -68,8 +68,18 @@ inquirer
     );
   });
 
-  // function compileData(data){
-
-  // }
-
+  //generate content answers
+ function generateREADME(answers){
+  //initialize empty string 
+  let readmeContent = '';
+ readmeContent += `# ${answers.projectTitle}\n\n`;
+ readmeContent += `## Description\n\n${answers.description}\n\n`;
+ readmeContent += `## Installation\n\n${answers.installation}\n\n`;
+ readmeContent += `## Usage\n\n${answers.usage}\n\n`;
+ readmeContent += `## Contribution\n\n${answers.contribution}\n\n`;
+ readmeContent += `## Tests\n\n${answers.tests}\n\n`;
+ readmeContent += `## License\n\n${answers.license}\n\n`;
+ readmeContent += `## Username\n\n${answers.username}\n\n`;
+ readmeContent += `## Email\n\n${answers.email}\n\n`;
+}
   
