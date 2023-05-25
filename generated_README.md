@@ -1,34 +1,34 @@
-# jj
+# Kermitify
 
 ## Description
 
-jj
+Kermitify is a ribboting web app that brings the charm of Kermit right to your browser.
 
 ## Installation
 
-kl
+open kermitify.com on your browser
 
 ## Usage
 
-jkl
+includes frog jokes, froggy filters and frog mating songs from around the world
 
 ## Contribution
 
-jkl;
+hop on if you'd like to join us for further development
 
 ## Tests
 
-jkl;
+please open up a github issue if any bugs are noticed
 
 ## License
 
-Apache 2.0
+None
 
 ## Username
 
-jj
+Kermy
 
 ## Email
 
-\j
+kermy@kermitify.com
 

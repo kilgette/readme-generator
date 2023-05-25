@@ -2,11 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const text = `This is a ReadMe Generator. Please follow the prompts below.`
 
-// $()
 console.log(text);
-
-// function promptUser() {
-//   return new Promise((resolve, reject) => {
 
 inquirer
   .prompt([
